@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Tip Calculator</title>
+</head>
+
+<body class="bg-[hsl(185,42%,84%)]">
+  <header>
+    <h1 class="text-center">SPLI<br>TTER</h1>
+  </header>
+
+  <main class="min-h-screen flex justify-center items-center px-4">
+
+    <div class="bg-white w-93.75 2xl:w-230 rounded-3xl p-6 
+              flex flex-col 2xl:flex-row gap-8">
+
+      <div class="flex-1 flex flex-col gap-6">
+        <div class="relative">
+          <h2 class="mb-1 text-sm text-gray-600">Bill</h2>
+          <img src="images/icon-dollar.svg" alt="icono" class="absolute left-3 top-9 w-5 h-5">
+          <input type="number" placeholder="0" class="w-full bg-amber-100 p-3 pl-10 pr-3 rounded-lg text-right">
+        </div>
+
+        <p class="text-sm text-gray-600">Select tip %</p>
+        <div class="grid grid-cols-2 gap-3">
+          <label class="cursor-pointer">
+            <input type="radio" name="tip" class="peer hidden">
+              class="bg-teal-900 text-white py-3 rounded-lg text-center peer-checked:bg-teal-400 peer-checked:text-teal-900 transition">
+              5%
+            </div>
+          </label>
+
+          <label class="cursor-pointer">
+            <input type="radio" name="tip" class="peer hidden">
+            <div
+              class="bg-teal-900 text-white py-3 rounded-lg text-center peer-checked:bg-teal-400 peer-checked:text-teal-900 transition">
+              10%
+            </div>
+          </label>
+
+          <label class="cursor-pointer">
+            <input type="radio" name="tip" class="peer hidden">
+            <div class="bg-teal-900 text-white py-3 rounded-lg text-center
+                      peer-checked:bg-teal-400 peer-checked:text-teal-900 transition">15%
+            </div>
+          </label>
+
+          <label class="cursor-pointer">
+            <input type="radio" name="tip" class="peer hidden">
+            <div class="bg-teal-900 text-white py-3 rounded-lg text-center
+                      peer-checked:bg-teal-400 peer-checked:text-teal-900 transition">25%
+            </div>
+          </label>
+
+          <label class="cursor-pointer">
+            <input type="radio" name="tip" class="peer hidden">
+            <div
+              class="bg-teal-900 text-white py-3 rounded-lg text-center peer-checked:bg-teal-400 peer-checked:text-teal-900 transition">
+              50%
+            </div>
+          </label>
+
+          <label class="cursor-pointer">
+            <input type="radio" name="tip" class="peer hidden">
+            <div class="bg-teal-400 text-teal-900 py-3 rounded-lg text-center">Custom
+            </div>
+          </label>
+        </div>
+
+        <div class="relative">
+          <h2 class="mb-1 text-sm text-gray-600">Number of People</h2>
+          <img src="images/icon-person.svg" alt="icono" class="absolute left-3 top-9 w-5 h-5">
+          <input type="number" placeholder="0" class="w-full bg-amber-100 p-3 pl-10 pr-3 rounded-lg text-right">
+        </div>
+
+      </div>
+
+      <!-- ------------------------------------------------------------------>
+      <div class="bg-[hsl(183_100%_15%)] 
+                flex-1 rounded-3xl p-8 
+                flex flex-col justify-between gap-8 text-white">
+        <div class="flex justify-between items-center">
+          <div>
+            <p class="text-sm">Tip Amount</p>
+            <span class="text-xs text-teal-300">/ person</span>
+          </div>
+          <p class="text-4xl text-[hsl(172_67%_45%)]">$0.00</p>
+        </div>
+
+        <div class="flex justify-between items-center">
+          <div>
+            <p class="text-sm">Total</p>
+            <span class="text-xs text-teal-300">/ person</span>
+          </div>
+          <p class="text-4xl text-[hsl(172_67%_45%)]">$0.00</p>
+        </div>
+        <input type="button" value="RESET"
+          class="bg-[hsl(172_67%_45%)] text-[hsl(183_100%_15%)] py-3 rounded-xl font-bold w-full mt-auto cursor-pointer" />
+      </div>
+
+    </div>
+
+  </main>
+
+</html>
